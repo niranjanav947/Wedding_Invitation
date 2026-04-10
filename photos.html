@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos | Niranjan & Sneha</title>
+    <meta name="description" content="Photos - Niranjan & Sneha Wedding">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            aspect-ratio: 4 / 5;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+            color: white;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin: 2rem auto;
+            }
+
+            .gallery-item {
+                aspect-ratio: 1 / 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mobile-header">
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="monogram">N&S</div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-story.html">Our Story</a></li>
+            <li><a href="words-from-parents.html">Words from Parents</a></li>
+            <li><a href="travel.html">Travel</a></li>
+
+            <li><a href="photos.html">Photos</a></li>
+
+
+        </ul>
+    </nav>
+
+    <div class="desktop-header">
+        <h1 class="desktop-title">NIRANJAN & SNEHA</h1>
+        <p class="desktop-subtitle">JUNE 25, 2026 &bull; SHIVAMOGGA, KARNATAKA, INDIA</p>
+        <p class="countdown desktop-countdown">CALCULATING DAYS...</p>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-story.html">Our Story</a></li>
+                <li><a href="words-from-parents.html">Words from Parents</a></li>
+                <li><a href="travel.html">Travel</a></li>
+
+                <li><a href="photos.html" class="active">Photos</a></li>
+
+
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="mobile-only fade-in" style="text-align: center; margin-top: 2rem; padding: 0 1.5rem;">
+            <h1 class="mobile-title">NIRANJAN & SNEHA</h1>
+            <p class="mobile-subtitle">JUNE 25, 2026 &bull; SHIVAMOGGA, KARNATAKA, INDIA</p>
+            <p class="countdown">CALCULATING DAYS...</p>
+        </div>
+
+        <div class="story-section fade-in" style="max-width: 1100px; text-align: center;">
+            <h2 class="script-title" style="margin-bottom: 2rem; font-size: clamp(2.5rem, 8vw, 4rem);">Our Moments</h2>
+            <p class="story-paragraph" style="max-width: 800px; margin: 0 auto 1rem auto;">A glimpse into our journey
+                and the beautiful moments that led us here.</p>
+        </div>
+
+        <div class="gallery-container fade-in">
+            <div class="gallery-item">
+                <img src="images/photo1.png" alt="Engagement Shoot 1">
+                <div class="gallery-overlay">
+                    <h3>Together Throughout</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo2.png" alt="Engagement Shoot 2">
+                <div class="gallery-overlay">
+                    <h3>Joyful Moments</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo3.png" alt="Engagement Shoot 3">
+                <div class="gallery-overlay">
+                    <h3>Promises Kept</h3>
+                </div>
+            </div>
+            <!-- Additional placeholders to show grid -->
+            <div class="gallery-item">
+                <img src="images/hero.png" alt="Hero Image">
+                <div class="gallery-overlay">
+                    <h3>Our Beginning</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section fade-in" style="margin-top: 4rem; text-align: center; padding-bottom: 5rem;">
+            <div>
+                <img src="images/monogram.png" alt="N&amp;S Monogram"
+                    style="max-width: 90%; max-height: 300px; width: auto; height: auto;">
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
