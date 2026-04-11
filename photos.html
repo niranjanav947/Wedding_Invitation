@@ -86,12 +86,13 @@
 
 <body>
     <div class="mobile-header">
-        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <div class="monogram">N&S</div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div class="monogram">N&S</div>
+            <button class="centered-menu-btn" id="hamburger-btn" aria-label="Toggle Navigation">
+                <span class="btn-text-menu">MENU <span style="opacity: 0.5;">|</span> TAP</span>
+                <span class="btn-text-close">CLOSE &#10005;</span>
+            </button>
+        </div>
     </div>
 
     <nav class="mobile-nav" id="mobile-nav">

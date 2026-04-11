@@ -16,12 +16,13 @@
 
 <body>
     <div class="mobile-header">
-        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <div class="monogram">N&S</div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div class="monogram">N&S</div>
+            <button class="centered-menu-btn" id="hamburger-btn" aria-label="Toggle Navigation">
+                <span class="btn-text-menu">MENU <span style="opacity: 0.5;">|</span> TAP</span>
+                <span class="btn-text-close">CLOSE &#10005;</span>
+            </button>
+        </div>
     </div>
 
     <nav class="mobile-nav" id="mobile-nav">
@@ -104,7 +105,7 @@
             <div class="event-details fade-in" style="margin-top: 4rem;">
                 <h2 class="script-title">Post &nbsp;Wedding Reception</h2>
                 <p class="detail-date">SUNDAY, JUNE 28, 2026</p>
-                <p class="detail-time">12:00 PM</p>
+                <p class="detail-time">from 11:30 AM</p>
                 <a href="https://maps.app.goo.gl/VCvndQigoKFn4i6R9" target="_blank" rel="noopener noreferrer"
                     class="nav-link" aria-label="Get directions">
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
