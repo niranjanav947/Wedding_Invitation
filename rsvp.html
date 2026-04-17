@@ -4,14 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Words from Parents | Niranjan & Sneha</title>
-    <meta name="description" content="Words from Parents - Niranjan & Sneha Wedding">
+    <title>Confirm Your Presence | Niranjan & Sneha</title>
+    <meta name="description" content="Confirm Your Presence - Niranjan & Sneha Wedding">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .rsvp-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .gform-iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .gform-iframe {
+                height: 900px;
+                /* Give more height on mobile for scrolling form */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -31,11 +54,8 @@
             <li><a href="our-story.html">Our Story</a></li>
             <li><a href="words-from-parents.html">Words from Parents</a></li>
             <li><a href="travel.html">Travel</a></li>
-
             <li><a href="photos.html">Photos</a></li>
             <li><a href="rsvp.html">Confirm Your Presence</a></li>
-
-
         </ul>
     </nav>
 
@@ -47,13 +67,10 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="our-story.html">Our Story</a></li>
-                <li><a href="words-from-parents.html" class="active">Words from Parents</a></li>
+                <li><a href="words-from-parents.html">Words from Parents</a></li>
                 <li><a href="travel.html">Travel</a></li>
-
                 <li><a href="photos.html">Photos</a></li>
-                <li><a href="rsvp.html">Confirm Your Presence</a></li>
-
-
+                <li><a href="rsvp.html" class="active">Confirm Your Presence</a></li>
             </ul>
         </nav>
     </div>
@@ -65,37 +82,16 @@
             </p>
         </div>
 
-        <div class="story-section" style="margin-top: 0;">
-            <h2 class="script-title"
-                style="text-align: center; margin-bottom: 3rem; font-size: clamp(2.5rem, 8vw, 4rem); word-spacing: 20px;">
-                Words from Parents
-            </h2>
+        <div class="story-section" style="max-width: 1100px; text-align: center; margin-top: 0;">
+            <h2 class="script-title" style="margin-bottom: 2rem; font-size: clamp(2.5rem, 8vw, 4rem);">Confirm Your
+                Presence</h2>
+            <p class="story-paragraph" style="max-width: 800px; margin: 0 auto 2rem auto;">Please let us know if you'll
+                be able to join us on our special day.</p>
 
-            <p class="story-paragraph" style="text-align: center;">With the divine blessings of Shri Guru Kottureshwara
-                Swamy,<br>our families joyfully invite you to grace the wedding celebration of</p>
-
-            <p class="desktop-title"
-                style="text-align: center; margin: 3rem 0; font-size: 2.5rem; letter-spacing: 5px;">NIRANJAN A
-                V<br>&amp;<br>SNEHA V K</p>
-
-            <p class="story-paragraph" style="text-align: center;">as they begin their beautiful journey together.</p>
-
-            <div
-                style="text-align: center; margin: 3rem 0; font-family: var(--font-sans); letter-spacing: 3px; color: var(--text-color);">
-                <p>DATE: 25 JUNE 2026</p>
-                <p style="margin-top: 0.5rem;">VENUE: SHIVAMOGGA, KARNATAKA</p>
-            </div>
-
-            <p class="story-paragraph" style="text-align: center;">Your presence will add warmth and joy to this special
-                occasion, and we would be truly honoured to celebrate this memorable day with you.</p>
-
-            <p class="story-paragraph" style="text-align: center; margin-top: 3rem;">With love and warm regards,</p>
-
-            <div
-                style="text-align: center; font-family: var(--font-serif); font-size: 1.3rem; color: var(--text-color); line-height: 1.8;">
-                <p>Geetha A V &amp; Viswanath A</p>
-                <p>Ashwini S &amp; Vasanth Kumar K C</p>
-                <p>Family &amp; Friends</p>
+            <div class="rsvp-container">
+                <iframe class="gform-iframe"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScZkh6DmDy0BkZ-_zhl9vyeVIwALcw3s2U8ymgat36eJWtKMg/viewform?embedded=true"
+                    frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
 
